@@ -10,6 +10,21 @@ Docs
 
 There [list of techniques](./docs) which I would like to describe.
 
+Build
+=====
+
+The modern cross-platform build uses the .NET 8 SDK pinned in [`global.json`](./global.json).
+
+Build the main SDK-style solution:
+
+    dotnet build de4dot.netcore.sln
+
+Publish the main CLI app:
+
+    dotnet publish de4dot/de4dot.csproj -c Release
+
+The legacy .NET Framework solution is kept separately in `de4dot.netframework.sln` and is intended for Windows environments with .NET Framework 4.8 available.
+
 Binaries
 ========
 
